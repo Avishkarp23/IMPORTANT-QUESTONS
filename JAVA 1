@@ -1,0 +1,7 @@
+Do you know why we use char[] array over string for storing passwords/sensitive information in java?
+
+✅ Strings are immutable - In Java, a string is basically immutable i.e. it cannot be modified. After its declaration, it continues to stay in the string pool as long as it is not removed in the form of garbage. In other words, a string resides in the heap section of the memory for an unregulated time whereas you can make char[] array null after your work is done.
+
+✅ Security- Any one who has access to memory dump can find the password in clear text and that’s another reason to use encrypted password than plain text. So Storing password in character array clearly mitigates security risk of stealing password. 
+
+✅ Java Standards - Java itself recommends using the getPassword() method of JPasswordField which returns a char[], instead of the deprecated getText() method which returns passwords in clear text stating security reasons. It's good to follow advice from the Java team and adhere to standards rather than going against them.
