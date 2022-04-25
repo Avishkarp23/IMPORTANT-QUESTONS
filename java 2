@@ -1,0 +1,18 @@
+Java interview question !! This is one of the interview question asked to me :)
+
+Most of us will know, what is singleton class and how we can make a class singleton but do you know why we make a class singleton?🙄
+
+For people who don't know, Singleton is a design pattern which ensures that class will have only one object.
+
+How to make a class singleton?
+
+1.Make its constructor private.
+2.Write a static method that has the return type object of this singleton class.
+
+Why we make class singleton?
+
+✅ The singleton class is used to control object creation and allows only one entry point to create the new instance of the class.
+
+✅ It is used where only a single instance of a class is required to control the action throughout the execution.
+
+✅ A singleton class shouldn’t have multiple instances in any case and at any cost.Thus, are used for logging, driver objects, caching, thread pool, database connections and sockets.
